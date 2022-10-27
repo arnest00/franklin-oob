@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "description": "Starter project for Adobe Helix",
   "scripts": {
+    "dev": "node sass-compile.mjs & hlx up",
+    "sass": "node sass-compile.mjs",
     "start": "hlx up",
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
-    "lint:css": "stylelint 'blocks/**/*.scss' 'styles/*.scss'",
+    "lint:css": "stylelint 'blocks/**/*.scss' 'styles/**/*.scss'",
     "lint": "npm run lint:js && npm run lint:css"
   },
   "repository": {
