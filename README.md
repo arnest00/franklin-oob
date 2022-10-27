@@ -2,8 +2,8 @@
 Starter project with Adobe Franklin
 
 ## Environments
-- Preview: https://main--franklin-oob--arnest00.hlx.page/
-- Live: https://main--franklin-oob--arnest00.hlx.live/
+- Preview: https://main--franklin-oob--sparkbox.hlx.page/
+- Live: https://main--franklin-oob--sparkbox.hlx.live/
 
 ## Installation
 
