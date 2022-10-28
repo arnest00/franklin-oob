@@ -4,10 +4,13 @@
   "version": "1.0.0",
   "description": "Starter project for Adobe Helix",
   "scripts": {
+    "dev": "node sass-compile.mjs & hlx up",
+    "sass": "node sass-compile.mjs",
+    "start": "hlx up",
     "test": "wtr \"./test/**/*.test.js\" --node-resolve --port=2000 --coverage",
     "test:watch": "npm test -- --watch",
     "lint:js": "eslint .",
-    "lint:css": "stylelint 'blocks/**/*.css' 'styles/*.css'",
+    "lint:css": "stylelint 'blocks/**/*.scss' 'styles/**/*.scss'",
     "lint": "npm run lint:js && npm run lint:css"
   },
   "repository": {
@@ -23,16 +26,17 @@
   "devDependencies": {
     "@babel/core": "7.19.3",
     "@babel/eslint-parser": "7.19.1",
+    "@esm-bundle/chai": "4.3.4-fix.0",
+    "@web/test-runner": "0.14.0",
+    "@web/test-runner-commands": "0.6.5",
     "chai": "4.3.6",
     "eslint": "8.24.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
-    "@esm-bundle/chai": "4.3.4-fix.0",
-    "@web/test-runner": "0.14.0",
-    "@web/test-runner-commands": "0.6.5",
+    "sass": "^1.55.0",
     "sinon": "14.0.1",
-    "stylelint": "14.13.0",
+    "stylelint": "^14.13.0",
     "stylelint-config-prettier": "9.0.3",
-    "stylelint-config-standard": "25.0.0"
+    "stylelint-config-standard-scss": "^6.0.0"
   }
 }

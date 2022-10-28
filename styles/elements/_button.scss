@@ -1,0 +1,37 @@
+button {
+  font-family: var(--body-font-family);
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal; 
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: var(--link-color);
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--link-hover-color);
+    cursor: pointer;
+  }
+
+  &:disabled,
+  &:disabled:hover {
+    background-color: var(--overlay-background-color);
+    cursor: unset;
+  }
+
+  &.secondary {
+    background-color: unset;
+    border: 2px solid currentcolor;
+    color: var(--text-color)
+  }
+}
