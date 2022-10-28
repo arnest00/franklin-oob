@@ -7,6 +7,14 @@
     width: 100%;
 }
 
+.columns.highlight {
+    background-color: gold;
+}
+
+.columns.highlight.grid {
+    background-color: tomato;
+}
+
 @media (min-width: 900px) {
     .columns > div {
         display: flex;
